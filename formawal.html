@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Aulia</title>
+	<title>TA4 Aulia</title>
 </head>
 <body>
-		<center>
-	<form action="formawal.php" method="post">
-		<tr>
-			<td>:</td>
-		<td>Nama Pengguna : <input type="text" name="nama" value=""/ style="width: 160px;height: 20px"></td>
-		<br /> </tr>
-		<tr>
-			<td>:</td>
-		<td>Kata Sandi : <input type="Password" name="Password"/ style="width: 160px;height: 20px"></td>
-		<br /> </tr>
-	</center>
-<h2 style="color: #FF69B4">silahkan pilih genre film yang anda sukai</h2>
-		<input type="checkbox" name="film[]" value="Action">Action<br>
-		<input type="checkbox" name="film[]" value="Adventure">Adventure<br>
-		<input type="checkbox" name="film[]" value="Comedy">Comedy<br>
-		<input type="checkbox" name="film[]" value="Crime&Gengster">Crime&Gengster<br>
-		<input type="checkbox" name="film[]" value="Drama">Drama<br>
-		<input type="checkbox" name="film[]" value="Horror">Horror<br>
-		<input type="checkbox" name="film[]" value="Anime">Anime<br>
-		<input type="checkbox" name="film[]" value="Musical/Dance">Musical<br>
-		<input type="checkbox" name="film[]" value="thrille">thrille<br>
-		<input type="submit" name="submit" value="submit">
-<h2 style="color: #FF69B4">Tempat Wisata tujuan travelling </h2>
-		<input type="checkbox" name="travelling[]" value="Bali">Bali<br>
-		<input type="checkbox" name="travelling[]" value="RajaAmpat">Raja Ampat<br>
-		<input type="checkbox" name="travelling[]" value="PulauDerawan">Pulau Derawan<br>
-		<input type="checkbox" name="travelling[]" value="BangkaBelitung">Bangka Belitung<br>
-		<input type="checkbox" name="travelling[]" value="LabuanBajo">Labuan Bajo<br>
-		<input type="submit" name="submit" value="submit">
-		</form>
-
-
+<form action="halamanbelanja.php" method="post">
+	<tr>
+              <h2 style="color: grey"> <td>Daftar Belanja</td> </h2>
+                <td>:</td>
+                <td> <br>
+                	<input type="checkbox" name="barang[]" value="KacaMmata">kacamata<br>
+                	<input type="checkbox" name="barang[]" value="Topi">Topi<br>
+                    <input type="checkbox" name="barang[]" value="Baju">Baju<br>
+                    <input type="checkbox" name="barang[]" value="sepatu">Sepatu<br>
+                    <input type="checkbox" name="barang[]" value="Tas">Tas<br>
+                </td>
+            </tr>
+            <tr>
+              <h2 style="color: grey">  <td>Jenis Pengiriman</td> </h2>
+                <td>:</td>
+                <td>
+                	<input type="checkbox" name="pengiriman" value="Gojek">Gojek
+                	<input type="checkbox" name="pengiriman" value="Grab">Grab
+                    <input type="checkbox" name="pengiriman" value="J&T">J&T
+                    <input type="checkbox" name="pengiriman" value="JNE">JNE
+                    <input type="checkbox" name="pengiriman" value="TIKI">TIKI
+                </td>
+            </tr>
+        <br>    <tr> 
+                <td>Alamat</td>
+                <td>:</td>
+                <td><input type="text" name="alamat"></td>
+            </tr>
+            <tr>
+                <input type="hidden" name="tanggal" value="<?php echo date("Y/m/d"); ?>">
+                <td colspan="3"><input type="submit" value="Belanja sekarang"></td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
